@@ -1,0 +1,30 @@
+<script>
+// Arrow Function in Js
+// Older Version
+
+function hello(){
+    console.log("Named Function");
+
+    
+    //Anynomous Function
+    let greet = function(){
+        console.log("Hii I am Anynomous Function" , this);
+    }
+    greet();
+}
+hello();
+
+//Arrow Function
+let name = () => {
+    console.log("This is An Arrow Function");
+}
+name();
+
+</script>
+
+<script>
+    let welcome = (name,age) => {
+        return `Hello && Welcome ${name} ---- ${age}`;
+}
+console.log(welcome("Vedprakash",24)); 
+</script>

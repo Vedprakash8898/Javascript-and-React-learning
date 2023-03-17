@@ -1,0 +1,26 @@
+<script>
+  var rec = new Promise((res, rej) => {
+    console.log(typeof res, typeof rej);
+    setTimeout(() => {
+      // res("API Data called");
+      rej("API data failed");
+    }, 3000);
+  });
+  console.log(rec);
+  /*
+   Pending
+   Fulfilled
+   Rejected
+   */
+
+  rec
+    .then((val) => {
+      console.log(val);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      console.log("Promise Completed");
+    });
+</script>

@@ -1,0 +1,26 @@
+<script>
+  // class ke Bhair objeect ka use kar value assign Karn hai uska Method Method
+  class student{
+    constructor(name, age,place) {
+      this.studentname = name;
+      this.studentage = age;
+      this.studentplace = place;
+      console.log("Constructor function called automatically");
+    }
+
+    hello() {
+      console.log(`Hello  ${this.studentname}  Yours age is ${this.studentage} and You place is  in ${this.studentplace}`);
+    }
+    
+
+    // How to Call a Static Function class.functionName
+    static staticMethod(){
+        console.log("Static Function Call");
+    }
+  }
+  let a = new student("Vedprakash Bind", 25,"Mumbai");
+  let b = new student("Ravi GUpta" , 21 ,"Ranchi")
+  a.hello();
+  b.hello();
+  student.staticMethod();
+</script>

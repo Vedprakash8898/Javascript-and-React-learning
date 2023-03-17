@@ -1,0 +1,28 @@
+<!-- Fetch : Fetch is a special Method In javascript.It is not a part of javascript It is present in Our Browser environment... 
+(2) Output Of fetch is Always Promise in javascript -->
+
+<!-- <script>
+//  var res  = fetch('https://fakestoreapi.com/products/categories');
+//  console.log(res); //promise => then()
+
+
+fetch('https://fakestoreapi.com/products/categories')
+.then(res=>res.json())
+.then(val => {
+    console.log(val);
+    
+})
+</script> -->
+
+<script>
+    categories = [];
+    fetch('https://fakestoreapi.com/products/categories', {
+        mode:'cors'
+    })
+    .then(res=>res.json())
+    .then(val => {
+        // console.log(val);
+        categories = val;
+    })          
+
+</script>

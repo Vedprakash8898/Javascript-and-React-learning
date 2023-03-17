@@ -1,0 +1,33 @@
+<script>
+    const object = {
+        fname:"vedprakash",     //Property Bolta 
+        lastName:"Bind",
+        FavMovies:["Dhoom","Shoaly","Roy"], //Method  Bolta 
+        age:25,
+
+        living : {
+            'city' : "Mumbai",
+            'country' : "India"
+        } ,
+
+        salary : function(){
+            return 10000;
+        } ,
+
+    fullname: function(){
+        return this.fname + " " + this.lastName;
+    }
+
+        
+
+
+    }
+    console.log(object);
+    console.log(object.FavMovies[2]); //Roy
+    console.log(object.lastName);
+    console.log(object.salary());
+    console.log(object.fullname()); 
+    document.write(object.fullname());
+
+    console.log(object.living.city);
+</script>

@@ -1,0 +1,36 @@
+<script>
+    // Spread Operators
+    let arr1 = [10,20,30,40];
+    let arr2 = [60,70,80];
+    // Concat Method
+    // let arr3 = arr1.concat(arr2);
+    // console.log(arr3);
+
+    // ES6 Method using spread Operators
+    let arr3 = [5,...arr1,...arr2 , 10];
+    console.log(arr3);
+
+
+
+
+
+    // let arr2 = [...arr1];
+    arr1.push(50);
+    // console.log(arr2);
+    // console.log(arr1);
+</script>
+
+
+<script>
+var obj1 = {
+    name:"Vedprakash Bind",
+    course : "MBA Chai"
+};
+
+var obj2 = {
+    age : 25
+}
+
+var obj3 = {...obj1 , ...obj2};
+console.log(obj3);
+</script>

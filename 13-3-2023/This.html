@@ -1,0 +1,93 @@
+ <!-- <script>
+    <!-- Arrow function : ()=> its Inheriet This value -->
+    // This Keyword in javascript
+    // Method --> obj
+    // Function --> global (window , global)
+//   this Inside Object and method if we console this inside 
+//   object we will see it Refer to current obj..  
+    const video = {
+        title: "a",
+        play() {
+            console.log(this);
+        }
+    };
+
+    video.stop = function(){
+        console.log(this);
+    }
+
+    video.play();
+    // video.stop();
+
+    // Example of First Rule Method ==> obj
+</script> -->
+
+
+
+
+<!-- 
+<script>
+    const video = {
+        title: "a",
+        play() {
+            console.log(this);
+        }
+    };
+
+    // This Inside Normal Function refer to window Object
+    function playVideo(){
+        console.log(this);
+    }
+    playVideo();
+
+    // if we call It with constructor function 
+    function Video(title){
+        this.title = title;
+        console.log(this);
+    }
+    // we have to create instance to call constructor function
+    const v = new Video("heading"); // {}
+    
+</script> -->
+
+
+<!-- With array -->
+<script>
+    //This in arrow Function Do not rebound to New Objects
+     const video = {
+        title: "The Movie",
+        tags : ['a','b','c'] ,
+        showTags() {
+            this.tags.forEach((tags)=>{
+                console.log(this.title , tags);
+            });
+        }
+    };
+
+    video.showTags();
+
+
+
+
+
+
+
+    /*
+
+    function playVideo(b,c) {
+        console.log(this);
+    }
+    playVideo.call({name: 'tej'}, 1,12);
+    playVideo.apply({name: 'Amit'}, [1 ,2]);
+  const fn = playVideo.bind({name: 'Ajay'})();
+//    fn();
+    // Bind function does not call Function and Its Return a New fuction and Points Out to Current Objects
+
+    // the Difference Between call(we call we have To Pass with Single value ) and Apply is With Apply(we have Pass argument has Array)
+    // playVideo(); //Normal function call(Window Object)
+
+    */
+
+
+
+</script>

@@ -1,0 +1,24 @@
+<script>
+    // Accessor Properties
+    console.log('Start');
+    const person = {
+        firstname : "ved",
+        lastname : "Bind",
+        get fullname(){
+            return this.firstname + ' ' + this.lastname
+        },
+        set fullname(name){
+            this.firstname = name.split(' ')[0];
+            this.lastname = name.split(' ').slice(1).join(' ');
+
+        }
+    }
+    // console.log(person.firstname);
+    console.log(person.fullname);
+    // I want to change value of that I want to use set properties
+    person.fullname = 'tej R Snow';
+    // console.log(person.fullname);
+    console.log(person.firstname);
+    console.log(person.lastname);
+    
+</script>

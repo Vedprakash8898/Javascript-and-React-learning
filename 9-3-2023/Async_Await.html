@@ -1,0 +1,19 @@
+<script>
+    async  function apiData(){
+        var res = await fetch('https://fakestoreapi.com/products',{mode:'cors'}); //1ms data
+        // console.log(ans);
+        // Note: If we dont write Await Keyword then we Dont get Json functionality and Immediately through an Error..
+        var ans = await  res.json(); //0.5msec
+        console.log(ans);
+        return ans;
+    }
+    
+    // Async Function se Koi chez Return Kar raha hai Promise he Milega...
+    
+    
+    apiData()
+    .then(val => {
+        console.log("API  Data Called");
+        console.log(val);
+    })
+</script>

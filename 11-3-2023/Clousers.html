@@ -1,0 +1,32 @@
+<!-- <script>
+    // Clousers: Return Functions Along With its lexical environment ..
+  var  message = "Global message";
+
+  function hello(){
+    let message = "Good Morning";
+    console.log("hello 1 :"  + message);
+
+    let c = function hello2(){
+        console.log('I am C Function' + message);
+    }
+    return c;
+  }
+
+  c = hello();
+c();
+</script> -->
+
+<script>
+    function init() {
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, that forms the closure
+    console.log(name); // use variable declared in the parent function
+  }
+  name = "Vedprakash"
+ return  displayName();
+}
+
+init();
+
+</script>

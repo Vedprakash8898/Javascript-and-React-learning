@@ -1,0 +1,57 @@
+<!-- Try -- catch Method : Synchronous Work karta hai 
+catch(err) ka property raheta hai
+err.name , err.meessage , err.stack
+
+
+-->
+<!-- <script>
+    try{
+    console.log("Start of Try Method");
+    sjdnxdjl;
+    console.log("End of Try Method");
+    }
+    catch(err){
+        // console.log("Any Error Has Been occured ");
+        // console.log(err.name);
+        console.log(err.message);
+        // console.log(err.stack);
+    }
+</script> -->
+
+
+<!-- <script>
+    setTimeout(function(){
+        try{
+
+        // console.log("Test");
+        redsjjdddddd;
+
+        }
+        catch(err){
+            console.log("Error Has Been occured");
+        }
+    } , 1000)
+</script> -->
+
+<script>
+    try{
+        let json = '{"name":"Vedprakash Bind", "age":25}';
+        console.log(typeof json);
+        let user = JSON.parse(json);
+        console.log(user);
+        console.log(typeof user);
+
+        console.log(user.name);
+        console.log(user.age);
+
+    }
+    catch(err){
+        console.log(err);
+    }
+    finally{
+        console.log("This is Finally Method");
+    }
+
+
+    
+</script>

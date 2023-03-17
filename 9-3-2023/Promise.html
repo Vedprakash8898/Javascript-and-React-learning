@@ -1,0 +1,50 @@
+<!-- Promise Three Stages....====>
+(1) Pending  (2) Fulfilled  (3) Rejected -->
+
+             <!-- Promise()
+    
+    resolve()                  reject()
+
+       
+    then()                      catch()
+    
+            
+            
+            -->
+
+<script>
+    //Promise Syntax
+    // let complete = false;
+
+    function prom(a,b){
+        return new Promise(function(res,rej){
+            // Pending State
+            console.log("Fetching Data , Please Wait");
+            var c = a / b ;
+            setTimeout(() => {
+
+                if(c){
+                res(`Your answer : ${c}`);
+                }else{
+                rej("failed to calculate");
+               }
+
+              } , 2000)
+
+            });
+}
+
+
+    prom(5,0).then((result) => {
+        console.log(result);
+    }).catch((err)=>{
+        console.log(err);
+    })
+    
+    
+    // console.log(prom(true));
+</script>
+
+
+
+

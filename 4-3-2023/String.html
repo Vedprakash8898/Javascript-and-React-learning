@@ -1,0 +1,56 @@
+<!-- In Javascript we have two type of String (1)String Primitive && 
+(2) String Objects -->
+
+<script>
+    // String primitive
+    const message = "Hello";
+    console.log(message , typeof message);
+
+    // String Object
+    const another = new String("Hii String");
+    console.log(another , typeof another);
+
+    //length method
+    let text = "We are learning Javascript";
+    console.log(text.length);
+    
+    //Js String slice() : These Method takes two parameters start , end
+    const val = "Apple,bananna,fruits,Kiwi";
+    // console.log(val.slice(0,5));
+    console.log(val.slice(-7));
+
+    const string = "we are learning  \"Javascript\" to implement in react";
+    console.log(string);
+
+    // Javascript SubString
+    let str = "Apple, Banana, Kiwi";
+    console.log(str.substr(7,12));
+
+    const up = "Hello Ved";
+    // console.log(up.toUpperCase());
+    // console.log(up.toLowerCase());
+
+    let text1 = "           Hello";
+    let text2 = "World";
+    let ans = text1.concat(" " ,text2);
+    console.log(ans);
+    
+    let space = "      Hello World!";
+    console.log(space.trim());
+
+    // Sting charAt()
+    let text5 = "Hello Namaste";
+    // console.log(text5.charAt(6));
+    // console.log(text5[1]);
+    console.log(text5.split(""));
+
+
+    //Javascipt String indexof() : The indexOf() method returns the index of (position of) the first occurrence of a string in a string:
+
+    // Notes:Both methods accept a second parameter as the starting position for the search:
+
+    let str1 = "Please locate where occurs!";
+    // console.log(str1.indexOf("Please"));
+    // console.log(str1.lastIndexOf("locate" , 15));
+    console.log(str1.lastIndexOf("where"))
+</script>

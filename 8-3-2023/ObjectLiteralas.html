@@ -1,0 +1,58 @@
+<script>
+  // Objects Literals
+  // let name = "Vedprakash Bind";
+  // let course = "BE Tech";
+
+  // var obj = {
+  //     name,
+  //     course
+  // }
+  // console.log(obj);
+
+  // Use Variable as A Propert Name
+  // let n = "Student";
+
+  // var obj3 = {
+  //     [n + "name"] : "Amit Yadav" ,
+  //     course : "BE Tech" ,
+  //     details : function(){
+  //         return `${this.Studentname} is student of ${this.course}`
+  //     }
+
+  // }
+  // console.log(obj3);
+  // // console.log(obj3.name);
+  // console.log(obj3.details());
+  // document.write(obj3.details());
+  // console.log(obj3[n]);
+</script>
+<!-- 
+<script>
+  let n = "Student";
+
+  var obj3 = {
+    [n + "name"]: "Amit Yadav",
+    course: "BE Tech",
+    'detail shows'(){
+        return `${this.Studentname} is student of ${this.course}`
+    }    
+};
+console.log(obj3);
+console.log(obj3['detail shows']());
+  
+</script> -->
+
+<script>
+let fname = "Vedprakash";
+let lname = "Bind";
+let course = "BE CS";
+
+function student(fname, lname , course){
+    let fullname = fname + " " + lname;
+    return {fullname,course};
+}
+let ans = student(fname,lname ,course);
+console.log(ans.course);
+console.log(ans.fullname);
+// console.log(student(fname,lname ,course));  //Objects
+</script>

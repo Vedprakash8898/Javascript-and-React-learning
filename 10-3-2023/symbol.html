@@ -1,0 +1,46 @@
+<script>
+var x = "hello world"  //string
+var x =  25 ; //number
+var x = true ; //Boolean
+var x = ["HTML","CSS","Js",'Node']; //Arrays
+
+var x = {
+    fname:"Ved",
+    lname:"Bind"
+}  //Objects
+
+var x = null;
+// console.log(typeof x);
+
+var y; //undefined
+// console.log(y);
+
+
+let id = Symbol("Hello World");
+// console.log(id.description);
+// alert(id.toString());
+// alert(id.description);
+
+
+
+// use symbol in Objects : Symbol ko Hum For In Loops me Use nahi kar sakte...
+let age = Symbol('age');
+
+let user = {
+    name:"Amit Yadav",
+    class:"BE MECH"
+}
+
+user[age] = 24;
+
+user["gender"] = 'Male';
+
+// for in loop....
+// for(let key in user){
+//     console.log(key);
+// }
+console.log(user);
+console.log(JSON.stringify(user));
+// Notes: jab Hum stringfy me bhi show karege tab bhi symbol valu Nahi dekhega....
+
+</script>

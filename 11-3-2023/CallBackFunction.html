@@ -1,0 +1,38 @@
+
+<script>
+  function sayHello() {
+    console.log("Hello World");
+  }
+
+  function sayHi(){
+    console.log("HII Javascript");
+  }
+
+  function greet(){
+    console.log("Good Morning");
+  }
+
+  function add(num1, num2, callback) {
+      
+    //   sayHello();
+
+    console.log(num1 + num2);
+    
+    callback();
+
+}
+
+// let a = 15;
+// let b = 20; 
+
+
+add(15, 20, sayHello);
+add(12, 6, sayHi);
+add(10, 5, function (){
+    console.log("This is Anynomous Function");
+});
+
+
+
+
+</script>

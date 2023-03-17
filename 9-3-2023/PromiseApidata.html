@@ -1,0 +1,32 @@
+<script>
+    // Promise : promise is a Special Object in javasccript we amy perform asynchronous Operation with help of promise...
+    var rec = new Promise((res,rej)=>{
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open('GET','https://fakestoreapi.com/products/categories',true);
+        xmlhttp.send();
+
+        xmlhttp.onload = function(){
+            if(xmlhttp.status == 404){
+                rej("Page Not Found")
+            }
+            else if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                res(xmlhttp.responseText);
+                }
+
+        }
+
+
+    })
+    console.log(rec);
+    rec
+    .then(val =>{
+        console.log(val);
+        console.log(JSON.parse(val));
+    })
+    .catch(err =>{
+        console.log(err);
+    })
+    .finally(()=>{
+        console.log("Task Completed");
+    })
+</script>

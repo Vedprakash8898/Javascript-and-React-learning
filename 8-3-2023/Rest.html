@@ -1,0 +1,14 @@
+<script>
+    function sum(a, ...rest){
+        // Rest Operatrors : Remaining value That we all pass in arugument if we are store in parameter with ...dot
+        // Rest operatrors will Create an new Array...
+        // console.log(rest);
+        let sum = 0;
+        for(let i in rest){
+            sum += rest[i]
+        }
+        console.log(sum);
+        console.log(a);
+ }
+    sum('Ravi',25,25,25,75);
+</script>

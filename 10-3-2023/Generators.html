@@ -1,0 +1,38 @@
+<!-- Genertors: On th Fly value generate karta hai....... -->
+<!-- Done ka matalab hai ke value :false aur bhi value h
+    ai generators me.. -->
+<!-- <script>
+  function* test() {
+    yield "First";
+    yield "second";
+    yield "Third";
+  }
+
+  let ans = test();
+
+  ans.next();
+  ans.next();
+  console.log(ans.next().value);
+</script> -->
+
+<script>
+      function *generateit() {
+  let nextNum = 300;
+  while (true) {
+  yield (nextNum++);
+
+  }
+  
+}
+
+  let g = generateit();
+//   console.log(g.next().value);
+//   console.log(g.next().value);
+//   console.log(g.next().value);
+for(let value of g){
+    if(value > 350) break;
+    console.log(value);
+}
+</script>
+
+ 

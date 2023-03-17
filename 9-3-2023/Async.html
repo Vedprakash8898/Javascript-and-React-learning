@@ -1,0 +1,25 @@
+<script>
+var myfunc = function(){
+        return ['mens','womwen']
+    }
+
+    var ans = myfunc();
+    console.log(ans);
+
+
+    // Function with async Keyword
+    // Async Function : Async function will always Return Promise with help of handlers we can manange the saync function.....
+    async function myfunc1(){
+        return {name:'vedprakash',age:23}
+    }
+
+    var result = myfunc1();
+    console.log(result);
+
+
+    result
+    .then(val => {
+        console.log(val);
+    })
+
+</script>

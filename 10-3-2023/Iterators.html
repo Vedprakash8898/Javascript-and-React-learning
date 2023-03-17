@@ -1,0 +1,55 @@
+<script>
+    var val = ["red","blue","green","orange"];
+    console.log(val);
+    // Iterator karna hai For Loop se...
+
+
+    // for(let i = 0 ; i < val.length ; i++){
+    //     console.log(val[i]);
+    // }
+
+    // For of Loop se karna Hai...
+    for(let ans of val){
+        console.log(ans);
+    }
+
+    // Iterators
+    // var list = ["Apple","Oranges","Grapes"];
+    // let fans = list[Symbol.iterator]();
+    // fans.next();
+
+    let number = [100,200,300,400,500,600]; //With Arrays
+    let str = "Vedprakash Bind";
+   let iter = str[Symbol.iterator]();
+
+   let result = iter.next();
+
+   while(!result.done){
+    // console.log(result.value);
+    result = iter.next();
+   }
+
+</script>
+
+
+
+//    iter.next();
+
+//   console.log(iter.next().value);
+//   console.log(iter.next().done);
+
+
+<script>
+    //value print karna hai Iterators
+    let val1 = [100,200,300,500,400];
+
+    let num = val1[Symbol.iterator]();
+    num.next();
+    num.next();
+    num.next();
+    console.log(num.next().value);
+    
+</script>
+
+
+
