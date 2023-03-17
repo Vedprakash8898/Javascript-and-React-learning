@@ -13,8 +13,8 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
-import './appStyles.css';
-import styles from './appStyles.module.css';
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 import FragmentDemo from "./components/FragmentDemo";
@@ -22,13 +22,33 @@ import Columns from "./components/Columns";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
     <div className="App">
+      {/* <ErrorBoundary>
+        <Hero heroName="batman" />
+        <Hero heroName="superman" />
+        <Hero heroName="Joker" />
+      </ErrorBoundary> */}
+
+      <ClickCounter />
+      <HoverCounter />
+
+
       {/* <PureComp />  */}
+      {/* <FocusInput /> */}
+      {/* <FRParentInput /> */}
+      {/* <PortalDemo /> */}
       {/* <ParentComp /> */}
-      <RefsDemo />
+      {/* <RefsDemo /> */}
       {/* <Columns /> */}
       {/* <Form /> */}
       {/* <LifecycleA /> */}
@@ -48,7 +68,7 @@ function App() {
       {/* <FunctionalClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind/> */}
-      
+
       {/* 
       <Greet name="Amit" lastName="Yadav">      
       <p>This is Children props</p>
