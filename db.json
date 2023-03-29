@@ -1,0 +1,56 @@
+{
+  "user": [
+    {
+      "id": "Ved",
+      "name": "vedpraksh bind",
+      "password": "ved12345",
+      "email": "bindved143@gmail.com",
+      "phone": "8898267557",
+      "country": "india",
+      "address": "",
+      "gender": "female"
+    },
+    {
+      "id": "Tejprakash",
+      "name": "Tej Bind",
+      "password": "tej12345",
+      "email": "tej123@gmail.com",
+      "phone": "9892517505",
+      "country": "india",
+      "address": "",
+      "gender": "female"
+    },
+    {
+      "id": "Ravi",
+      "name": "Ravi Pal",
+      "password": "Ravi@123",
+      "email": "Ravi123@gmail.com",
+      "phone": "989524163",
+      "country": "india"
+    },
+    {
+      "id": "Ramprakash",
+      "name": "Ramprakash Bind",
+      "password": "Ram1234",
+      "email": "Ram123@gmail.com",
+      "phone": "9619354059",
+      "country": "india"
+    },
+    {
+      "id": "vedprakash ",
+      "name": "vedprakash ",
+      "password": "Ved12345",
+      "email": "bindtej123@gmail.com",
+      "phone": "9892517505",
+      "country": "india"
+    },
+    {
+      "id": "Amit",
+      "name": "Amit yadav",
+      "password": "Amit@12345",
+      "email": "amit123@gmail.com",
+      "phone": "8898267557",
+      "country": "india"
+    }
+  ]
+}
