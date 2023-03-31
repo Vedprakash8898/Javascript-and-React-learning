@@ -35,10 +35,10 @@ function SinglePageProduct() {
     <div className="container">
       <h1>Single Product Page </h1>
       <div className="row">
-        <div className="col-xl-6">
+        <div className="col-xl-6 border" >
           <img src={api.image} className="img-fluid" />
         </div>
-        <div className="col-xl-6">
+        <div className="col-xl-6 border" style={{'padding-left':"50px" , 'gap':"10px"}}>
           <h2>&#8377; {api.price}</h2>
           <h1>{api.title}</h1>
           {/* <h2> Rating : {api.rating.rate}</h2>

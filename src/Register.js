@@ -113,8 +113,6 @@ const Register = () => {
                         className="form-control"
                       ></input>
                       <br/>
-                      {errormessage}
-
                     </div>
                   </div>
 
